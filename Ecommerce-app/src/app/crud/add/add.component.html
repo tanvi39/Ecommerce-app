@@ -1,0 +1,22 @@
+<div class="add">
+    <h4 >Add New Product</h4>
+<form (ngSubmit)="addPro(addproduct.value)" #addproduct="ngForm" class="form">
+    <!-- Below id is for json server -->
+    <!-- <label for=""><strong>Enter product ID</strong></label>
+    <input type="text" name="pid" class="input" ngModel required="" class="form-control"> -->
+
+    <label for=""><strong>Enter Image path</strong></label>
+    <input type="text" name="pimg" class="input" ngModel required="" class="form-control ">
+
+    <label for=""><strong>Enter product description</strong></label>
+    <input type="text" name="pdes" ngModel required="" class="form-control"> 
+
+    <label for=""><strong>Enter product title</strong></label>
+    <input type="text" name="ptitle" ngModel required="" class="form-control">
+
+    <label for=""><strong>Enter product Price</strong></label>
+    <input type="text" name="pp" ngModel required="" class="form-control">&nbsp;
+
+    <button type="submit" class="btn btn-info button" >Save</button>
+</form> 
+</div>

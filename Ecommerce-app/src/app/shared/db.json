@@ -1,0 +1,81 @@
+{
+  "admin": [
+    {
+      "id": "25a8",
+      "name": "Tanvi Jalindar Patil",
+      "password": "abc@123",
+      "email": "abc@gmail.com"
+    },
+    {
+      "id": "2fa2",
+      "name": "Tejas",
+      "password": "tejas@18",
+      "email": "xyz@gmail.com"
+    }
+  ],
+  "product": [
+    {
+      "id": "1",
+      "image": "../../../assets/Images/img2.jpg",
+      "title": "Kurti Set",
+      "description": "Fabric: Cotton Blend,Sleeve Length: 3/4 Sleeves,Pattern: Print,Combo of: Single ",
+      "price": "1000"
+    },
+    {
+      "id": "2",
+      "image": "../../../assets/Images/imgphone.jpg",
+      "description": "iPhone 15 Pro has a strong and light aerospace-grade titanium design with a textured matte-glass back. ",
+      "title": "Apple iPhone 15 Pro Max",
+      "price": "149900"
+    },
+    {
+      "id": "3",
+      "image": "../../../assets/Images/imgTshirt.jpg",
+      "title": "Women's T-Shirt",
+      "description": "Fabric: Cotton, Sleeves: Short Sleeves, Pattern: Printed ",
+      "price": "700"
+    },
+    {
+      "id": "4",
+      "image": "../../../assets/Images/imgdenim.jpg",
+      "title": "Jeans",
+      "description": "Women's new mom fit jeans",
+      "price": "1500"
+    },
+    {
+      "id": "5",
+      "image": "../../../assets/Images/imgmenshoes.png",
+      "title": "Shoes",
+      "description": "Men's white shoes",
+      "price": "2000"
+    },
+    {
+      "id": "6",
+      "image": "../../../assets/Images/imgmens-shirt.png",
+      "description": "Fabric: Cotton, Sleeves: Long Sleeve, Pattern: Plain, Style: Casual",
+      "title": "Men's shirt",
+      "price": "1700"
+    },
+    {
+      "id": "7",
+      "image": "../../../assets/Images/img3.jpg",
+      "description": "New women's short floral frock",
+      "title": "Frock",
+      "price": "1000"
+    },
+    {
+      "id": "8",
+      "image": "../../../assets/Images/watchimg.jpg",
+      "description": "Women Analogue Wrist Watches for Women's & Girls. Rose Gold Dial Watch with Stylish Bracelet Strap",
+      "title": "Watch",
+      "price": "1499"
+    },
+    {
+      "id": "9",
+      "image": "../../../assets/Images/footwearimg.jpg",
+      "title": "Sandals",
+      "description": "Women's black sandal",
+      "price": "1000"
+    }
+  ]
+}

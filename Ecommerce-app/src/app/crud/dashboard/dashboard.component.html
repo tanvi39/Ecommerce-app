@@ -1,0 +1,31 @@
+<div class="dashboard">
+    <table class="table table-hover">
+    <thead>
+        <tr>
+        <!-- <th>Sr.No</th> -->
+        <th>Product Id</th>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody >
+        @for (item of productData; track item.id) {
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.image}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.price}}</td>
+            <td>
+                <button class="btn btn-outline-success" [routerLink]="['/product/edit/',item._id]"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>&nbsp;
+                <button class="btn btn-outline-danger" (click)="onDelete(item._id)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>
+<router-outlet></router-outlet>

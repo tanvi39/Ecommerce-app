@@ -1,0 +1,66 @@
+<!-- Method -->
+<div class="body">
+    <div class="row">
+        <div class="col">
+            <h1>Shop with Trend</h1>
+            <a class="btn" href="#products">Explore now -></a>
+        </div>
+        <div class="col">
+            <img src="../../../assets/Images/homeimg.png" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="products" id="products">
+<div class="product-grid" >
+    <div class="product-item" *ngFor="let item of productList">
+        <img src="{{item.image}}" alt="">
+        <h5 >{{item.title}}</h5>
+        <p class="para">{{item.description}}</p>
+            <h5>Amount: Rs.{{item.price}}</h5>
+            <button class="add-to-cart" (click)="addtoCart(item)">Add to cart</button>
+    </div>
+</div>
+</div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="rowfooter">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="">shipping</a></li>
+                    <li><a href="">returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online Shop</h4>
+                <ul>
+                    <li><a href="#">dress</a></li>
+                    <li><a href="">shoes</a></li>
+                    <li><a href="">watch</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</footer>

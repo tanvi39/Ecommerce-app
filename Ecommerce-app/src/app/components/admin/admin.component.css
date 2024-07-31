@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+}
+a{
+    margin:10px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: white;
+    color: white;
+    font-family: fantasy;
+    
+}
+.alert{
+    color: red;
+    text-align: center;
+}
+.signup{
+    background-image: url('../../../assets/Images/bgimg4.jpg');
+    background-size: contain;
+    height: 100vh;
+}

@@ -1,0 +1,27 @@
+h4{
+    font-family: fantasy;
+    text-align: center;
+    padding: 40px;
+    margin-top: 0px;
+    color: white;
+}
+.form{
+    border: 1px solid white;     
+}
+label{
+    color: white;
+}
+.btn{
+    width: 10vw;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+.add{
+    background-image: url("../../../assets/Images/bgimg3.jpg");
+   background-size: contain;
+    height: 100vh;
+}

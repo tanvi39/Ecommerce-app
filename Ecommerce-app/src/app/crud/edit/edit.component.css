@@ -1,0 +1,28 @@
+h4{
+    text-align: center;
+    margin-top: 0px;
+    padding: 40px;
+    font-family: fantasy;
+    color: white;
+}
+.form{
+    border: 1px solid white;
+}
+label{
+    color: white;
+}
+.btn{
+    width: 10vw;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+.edit{
+    background-image: url("../../../assets/Images/backgroundimg.jpg");
+    background-size: contain;
+    height: 100vh;
+    
+}

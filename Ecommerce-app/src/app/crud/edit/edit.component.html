@@ -1,0 +1,22 @@
+<div class="edit">
+    <h4 > Edit Product data</h4>
+<form action="" (ngSubmit)="editPro(updateform.value)" #updateform="ngForm" class="form">
+
+    <!-- <label for="id"><strong>Edit product id</strong></label>
+    <input type="text" name="pid" id="id" [ngModel]="productData?.id "  class="form-control"> -->
+
+    <label for="path"><strong> Edit Product Path</strong></label>
+    <input type="text" name="pimg" id="path" [ngModel]="productData?.image"  class="form-control">
+
+    <label for="description"><strong>Edit Product Description</strong></label>
+    <input type="text" name="pdes" id="description" [ngModel]="productData?.description"  class="form-control">
+
+    <label for="title"><strong>Edit Product Title</strong></label>
+    <input type="text" name="ptitle" id="title" [ngModel]="productData?.title"  class="form-control">
+
+    <label for="price"><strong>Edit Product Price</strong></label>
+    <input type="text" name="pp" id="price" [ngModel]="productData?.price"  class="form-control">&nbsp;
+
+    <button type="submit" class="btn btn-info">Update</button>
+</form>
+</div>

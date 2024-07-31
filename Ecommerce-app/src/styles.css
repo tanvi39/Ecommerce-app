@@ -1,0 +1,26 @@
+.form{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 300px;
+    border: 2px solid white;
+}
+.input{
+    height: 35px;
+    margin: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+}
+.button{
+    height: 35px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media screen,print and (min-width:400px) and (max-width:800px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+}
+

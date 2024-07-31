@@ -1,0 +1,54 @@
+<div class="admin">
+    <div  *ngIf="!showlogin" class="signup">&nbsp;
+        <h1>Admin signup form</h1>&nbsp;
+        <form action="" class="form" #adminForm="ngForm" (ngSubmit)="signup(adminForm.value)">
+            <input type="text" class=" input " name="name" placeholder="Enter Name" #refName="ngModel" ngModel
+                required="">
+            <!-- pattern="[a-zA-z]{3,25}" -->
+            <div *ngIf="refName.invalid && refName.touched" class="alert alert-danger">
+                <div *ngIf="refName.errors?.['required']">Enter your name</div>
+                <!-- <div *ngIf="refName.errors?.['pattern']"> Min 3 max 20 letters required</div> -->
+            </div>
+
+            <input type="password" class=" input" name="password" placeholder="Enter password" #refPass="ngModel"
+                ngModel required="">
+            <!-- pattern="[a-zA-Z0-9]+@$&+[a-zA-Z0-9]{3-8}" -->
+            <div *ngIf="refPass.invalid && refPass.touched" class="alert alert-danger">
+                <div *ngIf="refPass.errors?.['required']">Password is required</div>
+                <!-- <div *ngIf="refPass.errors?.['pattern']">Password should contain min one letter one special character one number and max length should be 8</div> -->
+            </div>
+
+            <input type="text" class=" input" name="email" placeholder="Enter email" #refEmail="ngModel" ngModel
+                required="">
+            <!-- pattern="'[a-zA-Z0-9.,+-/]+@[a-zA-Z]+.[a-z]{3,10}'" -->
+            <div *ngIf="refEmail.invalid && refEmail.touched" class="alert alert-danger">
+                <div *ngIf="refEmail.errors?.['required']">Email is required</div>
+                <!-- <div *ngIf="refEmail.errors?.['pattern']">Enter correct email</div> -->
+            </div>
+            <button class=" button btn btn-info">SignUp</button>
+            <a (click)="openLogin()">Already Have Account? Click to Login</a>
+        </form>
+    </div>
+</div>
+
+
+<!-- Login form -->
+<div *ngIf="showlogin" class="signup">&nbsp;
+    <h1>Login Form</h1>&nbsp;
+    <p class="alert">{{Error}}</p>
+    <form  class="form" #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+
+        <input type="text" class=" input" name="email" placeholder="Enter email" #refEmail="ngModel" ngModel required="">
+        <div *ngIf="refEmail.invalid && refEmail.touched" class="alert alert-danger">
+            <div *ngIf="refEmail.errors?.['required']">Email is required</div>
+        </div>
+
+        <input type="password" class=" input" name="password" placeholder="Enter password" #refPass="ngModel" ngModel required="">
+        <div *ngIf="refPass.invalid && refPass.touched" class="alert alert-danger">
+            <div *ngIf="refPass.errors?.['required']">Password is required</div>
+        </div>
+
+        <button class=" button btn btn-info">Login</button>
+        <a (click)="openSignup()">Don't Have Account? Click to SignUp</a>
+    </form>
+</div>
