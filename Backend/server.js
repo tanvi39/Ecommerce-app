@@ -111,3 +111,8 @@ app.put('/product/edit/:id',async(req,res)=>{
         await client.close
     }
 })
+
+// Start listening to your server
+app.listen(PORT,()=>{
+    console.log("Server is running on: localhost:"+PORT)
+})
