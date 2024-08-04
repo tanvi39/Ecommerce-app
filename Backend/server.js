@@ -15,12 +15,7 @@ app.use(bodyParser.json())
 
 const uri="mongodb://localhost:27017/Ecommerce_website"
 
-// Start listening to your server
  PORT=8080
-app.listen(PORT,()=>{
-    console.log("Server is running on: localhost:"+PORT)
-})
-
 
 // fetching data from database
 app.get('/admin', async(req,res)=>{
