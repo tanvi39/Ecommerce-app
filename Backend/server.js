@@ -13,7 +13,7 @@ app.use(cors())
 app.use(express.json())
 app.use(bodyParser.json())
 
-const uri="mongodb://localhost:27017/Ecommerce_website"
+const uri="mongodb+srv://tanvipatil392000:tanvi@cluster0.eubuyqr.mongodb.net/"
 
  PORT=8080
 
@@ -22,7 +22,7 @@ app.get('/admin', async(req,res)=>{
     const client=new MongoClient(uri)
     try{
         await client.connect()
-        const database=client.db('Ecommerce_website')
+        const database=client.db('Ecommerce-websitemin')
         const data=database.collection('admin')
         const returnData= await data.find().toArray()
         res.send(returnData)
@@ -36,7 +36,7 @@ app.get('/product', async(req,res)=>{
     const client=new MongoClient(uri)
     try{
         await client.connect()
-        const database=client.db('Ecommerce_website')
+        const database=client.db('Ecommerce-websitemin')
         const data=database.collection('products')
         const returndata=await data.find().toArray()
         res.send(returndata)
@@ -52,7 +52,7 @@ app.get('/product/:id', async(req,res)=>{
     console.log(id, "In api")
     try{
         await client.connect()
-        const database=client.db('Ecommerce_website')
+        const database=client.db('Ecommerce-websitemin')
         const data=database.collection('products')
         const objectId = new ObjectId(id);
         const returndata=await data.findOne({ _id: objectId })
@@ -67,7 +67,7 @@ app.post('/product/add',async(req,res)=>{
     const client=new MongoClient(uri)
     try{
         await client.connect()
-        const database=client.db('Ecommerce_website')
+        const database=client.db('Ecommerce-websitemin')
         const data=database.collection('products')
         const returnData=await data.insertOne(req.body)
         res.send(returnData)
@@ -82,7 +82,7 @@ app.delete('/product/delete/:id',async(req,res)=>{
     const id=req.params.id
     try{
         await client.connect()
-        const database=client.db('Ecommerce_website')
+        const database=client.db('Ecommerce-websitemin')
         const data=database.collection('products')
         const objectId = new ObjectId(id);
         const returnData=await data.deleteOne({ _id: objectId })
@@ -100,7 +100,7 @@ app.put('/product/edit/:id',async(req,res)=>{
     console.log("put method")
     try{
         await client.connect()
-        const database=client.db('Ecommerce_website')
+        const database=client.db('Ecommerce-websitemin')
         const data=database.collection('products')
         const objectId=new ObjectId(id)
         const updateProduct=await data.updateOne({ _id: objectId },{$set:updateData})
